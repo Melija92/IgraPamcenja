@@ -32,6 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tezinaIgre = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -48,7 +50,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(181, 175);
+            this.label2.Location = new System.Drawing.Point(143, 194);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(255, 26);
             this.label2.TabIndex = 1;
@@ -65,7 +67,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(148, 303);
+            this.button1.Location = new System.Drawing.Point(148, 426);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(331, 43);
             this.button1.TabIndex = 3;
@@ -73,11 +75,35 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(143, 304);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(219, 26);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Odaberite težinu igre:";
+            // 
+            // tezinaIgre
+            // 
+            this.tezinaIgre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tezinaIgre.FormattingEnabled = true;
+            this.tezinaIgre.Items.AddRange(new object[] {
+            "Lagano",
+            "Teško"});
+            this.tezinaIgre.Location = new System.Drawing.Point(148, 353);
+            this.tezinaIgre.Name = "tezinaIgre";
+            this.tezinaIgre.Size = new System.Drawing.Size(331, 34);
+            this.tezinaIgre.TabIndex = 5;
+            // 
             // UnosImena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 421);
+            this.ClientSize = new System.Drawing.Size(639, 509);
+            this.Controls.Add(this.tezinaIgre);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -95,5 +121,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox tezinaIgre;
     }
 }

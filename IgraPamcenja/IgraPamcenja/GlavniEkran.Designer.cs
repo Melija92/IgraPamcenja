@@ -47,6 +47,7 @@
             this.slika1 = new System.Windows.Forms.PictureBox();
             this.imeIgraca = new System.Windows.Forms.Label();
             this.brojBodova = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.slika16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slika14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slika15)).BeginInit();
@@ -69,7 +70,7 @@
             // 
             this.brojPreostalihParova.AutoSize = true;
             this.brojPreostalihParova.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brojPreostalihParova.Location = new System.Drawing.Point(754, 221);
+            this.brojPreostalihParova.Location = new System.Drawing.Point(754, 122);
             this.brojPreostalihParova.Name = "brojPreostalihParova";
             this.brojPreostalihParova.Size = new System.Drawing.Size(229, 26);
             this.brojPreostalihParova.TabIndex = 16;
@@ -254,10 +255,10 @@
             // imeIgraca
             // 
             this.imeIgraca.AutoSize = true;
-            this.imeIgraca.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.imeIgraca.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.imeIgraca.Location = new System.Drawing.Point(752, 40);
             this.imeIgraca.Name = "imeIgraca";
-            this.imeIgraca.Size = new System.Drawing.Size(115, 39);
+            this.imeIgraca.Size = new System.Drawing.Size(99, 33);
             this.imeIgraca.TabIndex = 17;
             this.imeIgraca.Text = "label1";
             // 
@@ -265,17 +266,27 @@
             // 
             this.brojBodova.AutoSize = true;
             this.brojBodova.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brojBodova.Location = new System.Drawing.Point(754, 394);
+            this.brojBodova.Location = new System.Drawing.Point(754, 209);
             this.brojBodova.Name = "brojBodova";
             this.brojBodova.Size = new System.Drawing.Size(152, 26);
             this.brojBodova.TabIndex = 18;
             this.brojBodova.Text = "Broj bodova: 0";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(759, 268);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(224, 436);
+            this.listBox1.TabIndex = 20;
+            // 
             // GlavniEkran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1121, 746);
+            this.ClientSize = new System.Drawing.Size(1116, 746);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.brojBodova);
             this.Controls.Add(this.imeIgraca);
             this.Controls.Add(this.brojPreostalihParova);
@@ -339,6 +350,7 @@
         private System.Windows.Forms.Label brojPreostalihParova;
         private System.Windows.Forms.Label imeIgraca;
         private System.Windows.Forms.Label brojBodova;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

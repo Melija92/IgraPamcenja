@@ -13,6 +13,7 @@ namespace IgraPamcenja
     public partial class UnosImena : Form
     {
         public String ImeIgraca { get; set; }
+        public String Tezina { get; set; }
         public UnosImena()
         {
             InitializeComponent();
@@ -21,6 +22,7 @@ namespace IgraPamcenja
         private void button1_Click(object sender, EventArgs e)
         {
             ImeIgraca = textBox1.Text;
+            Tezina = tezinaIgre.SelectedItem.ToString();
             this.Close();
         }
     }

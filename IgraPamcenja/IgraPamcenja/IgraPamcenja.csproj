@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7CD4E531-82F7-4F77-AF4A-7D01C7F9DA92}</ProjectGuid>
+    <ProjectGuid>{D9271D37-BFC4-4220-B7AB-33A4B82914BA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>IgraPamcenja</RootNamespace>
     <AssemblyName>IgraPamcenja</AssemblyName>
@@ -45,16 +45,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IgraPamcenja.cs">
+    <Compile Include="GlavniEkran.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IgraPamcenja.Designer.cs">
-      <DependentUpon>IgraPamcenja.cs</DependentUpon>
+    <Compile Include="GlavniEkran.Designer.cs">
+      <DependentUpon>GlavniEkran.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="IgraPamcenja.resx">
-      <DependentUpon>IgraPamcenja.cs</DependentUpon>
+    <Compile Include="UnosImena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnosImena.Designer.cs">
+      <DependentUpon>UnosImena.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GlavniEkran.resx">
+      <DependentUpon>GlavniEkran.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +72,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UnosImena.resx">
+      <DependentUpon>UnosImena.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -80,58 +89,73 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\0.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\lav.jpg" />
+    <None Include="Resources\konj.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\kornjaca.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\svinja.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\krava.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\upitnik.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pas.jpg" />
+    <None Include="Resources\lav.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\macka.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\pas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\ptica.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\konj.jpeg" />
+    <None Include="Resources\svinja.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upitnik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kokos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jelen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zirafa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nilskiKonj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zebra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tigar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jez.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sova.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leptir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krokodil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zaba.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guster.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

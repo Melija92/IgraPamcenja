@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace IgraPamcenja
 {
-    public partial class PocetniPodaci : Form
+    public partial class UnosImena : Form
     {
-        public PocetniPodaci()
+        public String ImeIgraca { get; set; }
+        public UnosImena()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ImeIgraca = textBox1.Text;
+            this.Close();
         }
     }
 }

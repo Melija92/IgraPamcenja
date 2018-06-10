@@ -16,7 +16,7 @@ namespace IgraPamcenja
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new IgraPamcenja());
+            Application.Run(new GlavniEkran());
         }
     }
 }

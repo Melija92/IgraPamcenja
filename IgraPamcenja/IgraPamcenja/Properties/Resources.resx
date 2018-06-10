@@ -118,6 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="guster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guster.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jelen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jelen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jez" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jez.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kit.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kokos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kokos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="konj" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\konj.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -127,11 +142,23 @@
   <data name="krava" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\krava.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="krokodil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\krokodil.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="lav" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lav.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="leptir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leptir.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="macka" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\macka.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mis.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nilskiKonj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nilskiKonj.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,10 +166,25 @@
   <data name="ptica" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ptica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sova" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sova.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="svinja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\svinja.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tigar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tigar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="upitnik" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\upitnik.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zaba" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zaba.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zebra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zebra.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zirafa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zirafa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

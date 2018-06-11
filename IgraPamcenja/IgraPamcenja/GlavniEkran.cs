@@ -113,7 +113,7 @@ namespace IgraPamcenja
                         brojSlika.RemoveAt(brojSlika.Count - 1);
                     }
                 }
-                else if (UnosImena.Tezina == "Tesko")
+                else if (UnosImena.Tezina == "Teško")
                 {
                     if (slika is PictureBox)
                     {
@@ -227,6 +227,47 @@ namespace IgraPamcenja
                     slika.Image = Resources.upitnik;
                     break;
             }
+        }
+
+        private void novaIgra_Click(object sender, EventArgs e)
+        { 
+            BrojPoteza = 0;
+            MaxBrojBodova = 0;
+            ProslaSlika = null;
+            slikePoTagu = new Dictionary<string, Bitmap>();
+
+            this.brojBodova.Text = String.Empty;
+            this.brojBodova.Text += "Broj bodova: " + MaxBrojBodova;
+            this.listBox1.Items.Clear();
+            foreach (Control slika in this.Controls)
+            {
+                if (slika is PictureBox)
+                    (slika as PictureBox).Image = Resources.upitnik;
+            }
+
+            PostaviRandomTagoveNaSlike();
+
+            PostaviRandomSlikeUDictionary();
+
+            BrojPreostalihParova = 8;
+            if (UnosImena.Tezina == "Lagano")
+            {
+                BrojPreostalihParova = 4;
+                this.slika1.Visible = false;
+                this.slika2.Visible = false;
+                this.slika3.Visible = false;
+                this.slika4.Visible = false;
+                this.slika13.Visible = false;
+                this.slika14.Visible = false;
+                this.slika15.Visible = false;
+                this.slika16.Visible = false;
+
+            }
+            this.brojPreostalihParova.Text = String.Empty;
+            this.brojPreostalihParova.Text += "Broj preostalih parova: " + BrojPreostalihParova;
+
+
+            this.imeIgraca.Text = "Igrač:\n" + UnosImena.ImeIgraca;
         }
     }
 }

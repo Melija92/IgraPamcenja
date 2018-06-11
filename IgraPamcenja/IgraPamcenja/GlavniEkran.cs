@@ -113,13 +113,14 @@ namespace IgraPamcenja
                         brojSlika.RemoveAt(brojSlika.Count - 1);
                     }
                 }
-
-                if (slika is PictureBox)
+                else if (UnosImena.Tezina == "Tesko")
                 {
-                    (slika as PictureBox).Tag = brojSlika.Last();
-                    brojSlika.RemoveAt(brojSlika.Count - 1);
+                    if (slika is PictureBox)
+                    {
+                        (slika as PictureBox).Tag = brojSlika.Last();
+                        brojSlika.RemoveAt(brojSlika.Count - 1);
+                    }
                 }
-
             }
         }
         private void KlikNaSliku(object sender, EventArgs e)
@@ -138,7 +139,7 @@ namespace IgraPamcenja
                 BrojPoteza += 1;
                 if (ProslaSlika.Tag.ToString() == trenutnaSlika.Tag.ToString())
                 {
-                    MaxBrojBodova += 250 * (1 - (((double)BrojPoteza / 100) * 2));
+                    MaxBrojBodova += 200 * (1 - (((double)BrojPoteza / 100) * 2));
                     this.brojBodova.Text = "Broj bodova: " + MaxBrojBodova.ToString();
                     this.listBox1.Items.Add(BrojPoteza + "." + MaxBrojBodova + " - Pogodio!");
                     Application.DoEvents();
@@ -147,9 +148,7 @@ namespace IgraPamcenja
                     BrojPreostalihParova -= 1;
 
                     if (BrojPreostalihParova == 0)
-                    {
                         brojPreostalihParova.Text = "Čestitamo na pobjedi\n" + UnosImena.ImeIgraca + " osvojio si " + MaxBrojBodova + " bodova";
-                    }
                     else
                         brojPreostalihParova.Text = "Broj preostalih parova: " + BrojPreostalihParova;
                 }

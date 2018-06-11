@@ -296,7 +296,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 746);
+            this.ClientSize = new System.Drawing.Size(1114, 746);
             this.Controls.Add(this.novaIgra);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.brojBodova);

@@ -19,7 +19,6 @@ namespace IgraPamcenja
     public partial class GlavniEkran : Form
     {
         public int BrojPreostalihParova { get; set; }
-
         Dictionary<String, Bitmap> slikePoTagu = new Dictionary<String, Bitmap>();
         public Boolean PrvaSlikaKliknuta { get; set; } = true;
         public PictureBox ProslaSlika { get; set; }
@@ -170,7 +169,8 @@ namespace IgraPamcenja
         private void PostaviRandomSlikeUDictionary()
         {
             PropertyInfo[] props = typeof(Resources).GetProperties(BindingFlags.NonPublic | BindingFlags.Static);
-            var slikeIzResursa = props.Where(prop => prop.PropertyType == typeof(Bitmap)).Select(prop => prop.GetValue(null, null) as Bitmap).ToArray();
+            var slikeIzResursa = props.Where(prop => prop.PropertyType == typeof(Bitmap))
+                                      .Select(prop => prop.GetValue(null, null) as Bitmap).ToArray();
             
             Random r = new Random();
             List<int> generiraniBrojevi = new List<int>();

@@ -24,7 +24,7 @@ namespace IgraPamcenja
         public Boolean PrvaSlikaKliknuta { get; set; } = true;
         public PictureBox ProslaSlika { get; set; }
         public UnosImena UnosImena { get; set; }
-        public int MaxBrojBodova { get; set; } = 0;
+        public double MaxBrojBodova { get; set; } = 0;
         public int BrojPoteza { get; set; }
         private string[] zabranjeneSlikeZaNiziNivo = { "slika1", "slika2", "slika3", "slika4", "slika13", "slika14", "slika15", "slika16" };
         public GlavniEkran()
@@ -138,7 +138,7 @@ namespace IgraPamcenja
                 BrojPoteza += 1;
                 if (ProslaSlika.Tag.ToString() == trenutnaSlika.Tag.ToString())
                 {
-                    MaxBrojBodova += 100;
+                    MaxBrojBodova += 250 * (1 - (((double)BrojPoteza / 100) * 2));
                     this.brojBodova.Text = "Broj bodova: " + MaxBrojBodova.ToString();
                     this.listBox1.Items.Add(BrojPoteza + "." + MaxBrojBodova + " - Pogodio!");
                     Application.DoEvents();
@@ -155,7 +155,7 @@ namespace IgraPamcenja
                 }
                 else
                 {
-                    MaxBrojBodova -= 50;
+                    MaxBrojBodova -= 50 * (1 + (((double)BrojPoteza / 100) * 2));
                     this.brojBodova.Text = "Broj bodova: " + MaxBrojBodova.ToString();
                     this.listBox1.Items.Add(BrojPoteza + "." + MaxBrojBodova + " - Promašio");
                     Application.DoEvents();
@@ -163,7 +163,6 @@ namespace IgraPamcenja
                     ProslaSlika.Image = Resources.upitnik;
                     trenutnaSlika.Image = Resources.upitnik;
                 }
-
 
                 PrvaSlikaKliknuta = true;
             }
